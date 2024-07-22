@@ -35,6 +35,11 @@ def input_image_details(uploaded_file):
 # Initialize Streamlit App
 
 st.set_page_config(page_title="LLM - Invoice Extractor")
+st.header("LLM - Invoice Extractor")
+st.write("")
+st.write("Done by: Parthebhan Pari")
+st.write("")
+st.write("Enter your query below and click 'Submit' to get a response :")
 
 input = st.text_input("Input prompt: ",key='input')
 uploaded_file = st.file_uploader("Choose an image of the invoice...", type=['jpg','jpeg','png'])
