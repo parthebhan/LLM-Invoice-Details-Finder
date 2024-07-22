@@ -8,7 +8,7 @@ api_key = st.secrets["auth_token"]
 genai.configure(api_key=api_key)
 
 # Create a generative model
-model = genai.GenerativeModel('gemini-pro-vision')
+model = genai.GenerativeModel(' gemini-1.0-pro-vision')
 
 def get_gemini_response(input,image,prompt):
   response = model.generate_content([input,image[0],prompt])
