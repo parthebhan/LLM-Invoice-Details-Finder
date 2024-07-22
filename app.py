@@ -39,7 +39,7 @@ st.header("LLM - Invoice Extractor")
 st.write("")
 st.write("Done by: Parthebhan Pari")
 st.write("")
-st.write("Enter your query below and click 'Submit' to get a response :")
+st.write("Enter your query below to get details in invoice and click 'Submit' to get a response :")
 
 input = st.text_input("Input prompt: ",key='input')
 uploaded_file = st.file_uploader("Choose an image of the invoice...", type=['jpg','jpeg','png'])
